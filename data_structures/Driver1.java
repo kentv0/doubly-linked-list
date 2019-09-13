@@ -1,16 +1,16 @@
-/*  Driver.java */
+/* Driver1.java */
 package data_structures;
 
 import java.util.Iterator;
 
-public class Driver {
+public class Driver1 {
 
     private LinearListADT<Integer> list;
     private int[] array;
     private int[] scrambled_array;
     private static final int STRUCTURE_SIZE = 50000;
 
-    public Driver() {
+    public Driver1() {
         list = new LinearList<Integer>();
         array = new int[STRUCTURE_SIZE];
         scrambled_array = new int[STRUCTURE_SIZE];
@@ -140,7 +140,7 @@ public class Driver {
     }
 
     public static void main(String[] args) {
-        Driver testDriver = new Driver();
-        testDriver.runTests();
+        Driver1 testDriver1 = new Driver1();
+        testDriver1.runTests();
     }
 }
