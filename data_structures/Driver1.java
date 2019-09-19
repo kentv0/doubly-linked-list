@@ -1,8 +1,13 @@
-/* Driver1.java */
 package data_structures;
 
 import java.util.Iterator;
 
+/**
+ * The Driver1 test driver Class for {@link LinearList.class}.
+ *
+ * @version     0.1.0 01 Oct 2015
+ * @author      Alan Riggins
+ */
 public class Driver1 {
 
     private LinearListADT<Integer> list;
@@ -14,6 +19,7 @@ public class Driver1 {
         list = new LinearList<Integer>();
         array = new int[STRUCTURE_SIZE];
         scrambled_array = new int[STRUCTURE_SIZE];
+
         for (int i = 0; i < STRUCTURE_SIZE; i++) {
             array[i] = scrambled_array[i] = (i + 1);
         }
@@ -28,11 +34,12 @@ public class Driver1 {
     }
 
     public void runTests() {
-        // addFirst/removeFirst check     
-        for (int i = 0; i < STRUCTURE_SIZE; i++) // add elements
-        {
+
+        // addFirst/removeFirst check
+        for (int i = 0; i < STRUCTURE_SIZE; i++) {
             list.addFirst(array[i]);
         }
+
         // remove and check the order
         for (int i = STRUCTURE_SIZE - 1; i >= 0; i--) {
             if (list.removeFirst() != (i + 1)) {
@@ -42,10 +49,10 @@ public class Driver1 {
         }
 
         // addLast/removeLast check
-        for (int i = 0; i < STRUCTURE_SIZE; i++) // add elements
-        {
+        for (int i = 0; i < STRUCTURE_SIZE; i++) {
             list.addLast(array[i]);
         }
+
         // remove and check the order
         for (int i = 0; i < STRUCTURE_SIZE; i++) {
             if (list.removeFirst() != (i + 1)) {
@@ -72,23 +79,24 @@ public class Driver1 {
             System.out.println("ERROR in iterator");
         }
 
-
         // now testing the remove method            
-        for (int i = 0; i < STRUCTURE_SIZE; i++) // add elements
-        {
+        for (int i = 0; i < STRUCTURE_SIZE; i++) {
             list.addFirst(array[i]);
         }
 
         int mark = 1000;
         for (int i = 0; i < STRUCTURE_SIZE; i++) {
+
             if (i == mark) {
                 System.out.println((mark / 500) + "% completed");
                 mark += 1000;
             }
+
             if (list.remove(scrambled_array[i]) == null) {
                 System.out.println(scrambled_array[i]);
                 System.out.println("Failure in remove, returned false");
             }
+
             if (list.contains(scrambled_array[i])) {
                 System.out.println(
                         "Failure in contains, found an element that was removed.");

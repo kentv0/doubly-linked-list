@@ -2,6 +2,12 @@ package data_structures;
 
 import java.util.Iterator;
 
+/**
+ * The Queue interface Class.
+ *
+ * @version     0.1.0 01 Oct 2015
+ * @author      Alan Riggins
+ */
 public class Queue<E> {
     
     private LinearListADT<E> queue;
