@@ -3,13 +3,12 @@ package data_structures;
 import java.util.Iterator;
 
 /**
- * The Stack interface Class.
+ * The Stack interface Class for {@link LinearList.class}.
  *
  * @version     0.1.0 01 Oct 2015
  * @author      Alan Riggins
  */
 public class Stack<E> {
-    
     private LinearListADT<E> stack;
     
     public Stack() {

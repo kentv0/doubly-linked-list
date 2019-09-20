@@ -9,7 +9,6 @@ import java.util.Iterator;
  * @author      Alan Riggins
  */
 public class Driver1 {
-
     private LinearListADT<Integer> list;
     private int[] array;
     private int[] scrambled_array;

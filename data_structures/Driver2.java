@@ -10,7 +10,6 @@ import java.util.Iterator;
  * @author      Alan Riggins
  */
 public class Driver2 {
-
     LinearListADT<Integer> lut;
     static final int SmallTestSize = 10;
     static final int MediumTestSize = 50;
