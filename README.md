@@ -13,7 +13,7 @@ Get Started
 ### 2. Compile package
 ```
     $ cd doubly-linked-list
-    $ javac data_structures/*
+    $ javac ./*.java data_structures/*
 ```
 ### 3. Run test driver 1
 ```
@@ -143,7 +143,7 @@ Get Started
 ```
 ### 5. Clean
 ```
-    $ rm -rf data_structures/*.class
+    $ rm -rf ./*.class data_structures/*.class
 ```
 ### 6. Debug
 * Ignore the following output during compile
