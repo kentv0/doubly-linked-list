@@ -1,6 +1,6 @@
-package data_structures;
-
 import java.util.Iterator;
+import data_structures.LinearList;
+import data_structures.LinearListADT;
 
 /**
  * The Driver1 test driver Class for {@link LinearList.class}.
